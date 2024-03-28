@@ -1,0 +1,32 @@
+version: '1'
+services:
+  triton:
+    image: nvcr.io/nvidia/tritonserver:23.12-py3
+    volumes:
+      - D:/image-search-engine/server/model_repository/:/models
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+      - "8002:8002"
+    command: tritonserver --model-repository=/models
+    environment:
+      - TRITON_HOST=triton
+      - TRITON_HTTP_PORT=8000
+      - TRITON_GRPC_PORT=8001
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ${PWD}/qdrant_storage:/qdrant/storage:z
+    environment:
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+  fast_api:
+    image: api:lastest
+    depends_on:
+      - triton
+      - qdrant
+    ports:
+      - "5000:8761"

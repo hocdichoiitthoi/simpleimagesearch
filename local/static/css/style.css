@@ -1,0 +1,124 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgb(173, 236, 255);
+    box-sizing: border-box;
+}
+/* header */
+<<<<<<< HEAD
+.header {
+    margin-bottom: 20px;
+    text-align: center; 
+=======
+@import url('https://fonts.cdnfonts.com/css/fty-skorzhen-ncv');
+.header {
+    margin-bottom: 20px;
+    text-align: center; 
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+>>>>>>> 763acd3a72307665d43df193e875330143228e43
+    font-size: 30px;
+}
+
+.dragdrop {
+    width: 100%;
+    min-height: 100vh;
+    display:  flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+#dragdrop-area {
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 70%;
+    height: 70%;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+} 
+#drop-zone-border {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+}
+#drop-zone-area {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+#upload-cloud {
+    width: 20%;
+    height: 20%;
+}
+#drop-zone-area span {
+    display: block;
+    font-size: 12px;
+    color: rgb(161, 159, 159);
+    margin-top: 15px
+}
+#drop-zone-area img {
+    margin-bottom: 2vh;
+}
+
+.user-input-img-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: azure;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    align-items:  center;
+    border-radius: 20px;
+}
+
+.user-output-img-area {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-output-img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#user-input-title {
+    margin-top: 30px;
+}
+.user-title {
+    text-align: center;
+}
+
+#super-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/valonik-personal-use');
+.user-title {
+    font-size: 20px;
+<<<<<<< HEAD
+=======
+    font-family: 'Valonik Personal Use', sans-serif;
+>>>>>>> 763acd3a72307665d43df193e875330143228e43
+    margin-bottom: 5vh;
+                                                                         
+}
+#upload-cloud {
+    width: 100px;
+    height: 100px;
+}
